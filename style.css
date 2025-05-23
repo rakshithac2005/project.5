@@ -23,7 +23,7 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("image/photo-1504674900247-0877df9cc836.jpeg") center
+  background: url("photo-1504674900247-0877df9cc836.jpeg") center
     center/cover;
   z-index: -2;
 }
