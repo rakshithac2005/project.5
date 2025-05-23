@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutton Biryani Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Mutton Biryani Recipe</h1>
+
+    <div class="recipe-card">
+      <!-- Ingredients Column -->
+      <div class="column ingredients">
+        <h2 style="color: aquamarine;" class="section-title ingredients-title">🧂 Ingredients</h2>
+        <ul>
+          <li>500g Mutton (bone-in)</li>
+          <li>2 cups Basmati Rice</li>
+          <li>1 cup Yogurt</li>
+          <li>2 Onions (thinly sliced)</li>
+          <li>2 Tomatoes (chopped)</li>
+          <li>1 tbsp Ginger-Garlic Paste</li>
+          <li>Whole Spices (Bay Leaf, Cloves, Cinnamon)</li>
+          <li>1 tsp Red Chili Powder</li>
+          <li>1/2 tsp Turmeric</li>
+          <li>1 tsp Garam Masala</li>
+          <li>Salt to taste</li>
+          <li>Fresh Coriander & Mint Leaves</li>
+          <li>Saffron soaked in warm milk</li>
+          <li>Ghee & Oil for cooking</li>
+        </ul>
+      </div>
+
+      <div class="column center">
+        <img
+          src="image/Mutton-Biryani-1-e1574922017237.jpg"
+          alt="Mutton Biryani"
+          class="recipe-image"
+        />
+
+        <div class="description">
+          <h3>Royal Mutton Biryani</h3>
+          <p>
+            A rich and aromatic rice dish made with tender mutton, fragrant
+            basmati rice, and a perfect blend of traditional spices, slow-cooked
+            to perfection.
+          </p>
+        </div>
+        <div class="rating">
+          <span class="star" onclick="rate(this)">★</span>
+          <span class="star" onclick="rate(this)">★</span>
+          <span class="star" onclick="rate(this)">★</span>
+          <span class="star" onclick="rate(this)">★</span>
+          <span class="star" onclick="rate(this)">★</span>
+        </div>
+      </div>
+
+      <!-- Preparation Column -->
+      <div class="column instructions">
+        <h2 style="color: aquamarine;"" class="section-title preparation-title">👨‍🍳 Preparation</h2>
+        <ol>
+          <li>
+            Marinate the mutton with yogurt, chili powder, turmeric, salt, and
+            ginger-garlic paste. Let it sit for at least 2 hours.
+          </li>
+          <li>
+            Fry the onions in ghee/oil until golden brown. Set half aside for
+            later.
+          </li>
+          <li>
+            Add chopped tomatoes to the remaining onions and cook until soft.
+          </li>
+          <li>
+            Add marinated mutton and cook for 30–40 minutes or until tender.
+          </li>
+          <li>
+            Parboil the basmati rice with salt and whole spices. Drain and keep
+            aside.
+          </li>
+          <li>
+            In a heavy-bottomed pot, layer mutton, rice, fried onions, mint,
+            coriander, and saffron milk.
+          </li>
+          <li>
+            Seal the pot with dough or a tight lid and cook on low flame (dum)
+            for 20–25 minutes.
+          </li>
+          <li>
+            Let it rest for 10 minutes before serving. Fluff gently and serve
+            hot with raita or salad.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <script>
+      function rate(star) {
+        const stars = star.parentElement.querySelectorAll(".star");
+        const index = Array.from(stars).indexOf(star);
+        stars.forEach((s, i) => {
+          s.classList.toggle("selected", i <= index);
+        });
+      }
+    </script>
+  </body>
+</html>
